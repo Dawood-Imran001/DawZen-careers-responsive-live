@@ -1,0 +1,152 @@
+<!DOCTYPE>
+<html>
+    <head lang="en">
+        <title>
+            My Webpage
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <div id="logo-section">
+        <img  id="logo" src="https://dawzenofficials.myshopify.com/cdn/shop/files/only_logo.webp?v=1752736481&width=90" alt="DawZen Logo" >
+        </div>
+        <img id= "banner" src="banner.png" alt="Yoga Mat" height="300" width="600">
+        <h1>
+            About DawZen
+        </h1>
+        <div id="about" >
+            <div id="description">
+                <p style="margin-top: 0%;">DawZen is a <b>fitness</b> brand helping millions to maintain their physical and mental health.
+            Our aim is to increase the fitness <span style="text-decoration:line-through;">ratio in</span> <strong>Pakistan</strong> to a level never seen before.
+            We offer 2 industry focused offers:
+                <ol>
+                    <li>
+                        <a href="https://www.facebook.com/DawZenOfficials/" target="_blank">Social Media Management</a>
+                    </li>
+                    <li>
+                       <a href="https://trax.pk/tracking/"target="_blank">Courier Management</a>
+                    </li>
+                </ol>
+                </p>
+            </div>
+            <div>
+                <img id="forest-img" src="5.png" alt="Calm forest, sunset, green">
+            </div>
+        </div>
+          
+        <h2 style="text-align: center;">Job Opportunities</h2>
+        <div id="job">
+            <table id="jobs-table">
+                <tr class="jobs-header-row">
+                    <th rowspan="2">Job Title</th>
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Date Posted</th>
+                </tr>
+                <tr class="jobs-header-row">
+                    <th>Area</th>
+                    <th>Country</th>
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Social Media Manager</td>
+                    <td>Karachi</td>
+                    <td>Pakistan</td>
+                    <td>25,000 Pkr</td>
+                    <td>July 8, 2025</td>
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Content Creator</td>
+                    <td>Global</td>
+                    <td>Pakistan</td>
+                    <td>35,000 Pkr</td>
+                    <td>July 15, 2025</td>
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Courier Manager</td>
+                    <td>Lahore</td>
+                    <td>Pakistan</td>
+                    <td>20,000 Pkr</td>
+                    <td>August 1, 2025</td>
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Web Developer</td>
+                    <td colspan="2">Remote</td>
+                    <td>40,000 Pkr</td>
+                    <td>August 4, 2025</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="application">
+            <h2>Submit Your Application</h2>
+
+            <form id="application-form" action="https://formbold.com/s/6lpLd" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label> <br>
+                    <input type="text" id="name" class="form-input" name="Full Name" required placeholder="DawZen">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label> <br>
+                    <input type="text" id="email" class="form-input" name="Email-address" required placeholder="dawzen@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone-no" class="form-label">Phone Number</label> <br>
+                    <input type="tel" id="phone-no" class="form-input" name="Phone-Number" required placeholder="+92123456789">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dob">Date Of Birth</label> <br>
+                    <input type="date" id="dob" class="form-input" name="DOB" required>
+                </div>
+                <div class="form-group">
+                    <label for="Post-applied" class="form-label">Position Applied for</label> <br>
+                    <select name="Postion-Applied" id="Post-applied" required>
+                        <option value="">Select An Option</option>
+                        <option value="Social Media Manager">Social Media Manager</option>
+                        <option value="Content Creator">Content Creator</option>
+                        <option value="Courier Manager">Courier Manager</option>
+                        <option value="Web Developer">Web Developer	</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resume" class="form-label">Upload Resume</label> <br>
+                    <input type="file" id="resume" class="form-input" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="cover-letter" class="form-label">Cover Letter</label> <br>
+                    <textarea name="Cover-Letter" id="cover-letter" placeholder="What describes you best for this job......." rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="check-box">
+                        <input class="form-input" type="checkbox" id="check-box" required>
+                        I agree to the terms and conditions.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input class="form-input" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        
+        <div id="footer">
+            <ul id="footer-links">
+                <li>
+                    <a href="https://www.facebook.com/DawZenOfficials/"target="_blank">Contact</a>
+                </li>
+                <li>
+                    <a href="https://dawzenofficials.myshopify.com/pages/privacy-policy"target="_blank">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/DawZenOfficials/"target="_blank">Social Media</a>
+                </li>
+                </ul>
+            <span id="copyright">© 2025 DawZen</span>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,186 @@
+html{
+    font-size: 20px;
+}
+
+#logo-section{
+    background-color: rgba(74,103,65,0.45);
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: green;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1.25rem;
+}
+h6{
+    font-size: 1rem;
+}
+
+#about {
+    display: flex;
+    width: 50%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+#description{
+    padding-left: 8px;
+    padding-right: 10px;
+    margin: 0%;
+    width: 100%;
+    text-align: left;
+    font-style: italic;
+    line-height: 1.4;
+    background-color: rgb(211,211,211);
+}
+#forest-img{
+    border-radius: 10px;
+    width: 100%;
+}
+#banner {
+    object-fit: cover;
+    width: 100%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: #2E6F40;
+}
+
+a:focus, a:hover{
+    color: #253D2C;
+}
+
+#logo{
+    margin: 0%;
+
+    padding: 0px 8px 8px 0px;
+}
+
+
+
+#jobs-table{
+    width: 100%;
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+}
+
+.jobs-header-row th{
+    border: 1px solid darkgray;
+    background-color: #68BA7F;
+    text-align: center;
+    color: #253D2C;
+    padding: 8px;
+}
+
+.jobs-data-row td{
+    border: 1px solid darkgray;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+#jobs-table tr:nth-child(odd){
+    background-color: #CFFFDC;
+}
+
+.jobs-header-row{
+    font-size: 1.25rem;
+}
+
+#job {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#application{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.form-group{
+    margin-bottom: 16px;
+}
+
+.form-label{
+    font-weight:600;
+}
+
+.form-input, #post-applied, #cover-letter{
+    font-size: 1.25rem;
+    margin-top: 4px;
+    padding: 4px;
+    border: 4px solid gray;
+    border-radius: 8px;
+}
+
+.form-group input[type = "checkbox"]{
+    height: 20px;
+    width: 20px;
+    color: gray;
+}
+
+.form-group input[type = "submit"]{
+    padding: 16px;
+    color: #CFFFDC;
+    background-color: #253D2C;
+    cursor: pointer;
+}
+
+h3{
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.apply{
+    float: right;
+}
+
+#footer{
+    background-color: #B2BEB5;
+    padding: 8px;
+    margin: 32px;
+    text-align: center;
+}
+
+#footer-links{
+    list-style: none;
+}
+#footer-links li{
+    display: inline;
+    margin: 0 16px;
+    
+}
+
+#copyright{
+    color: #36454F;
+    font-size: 0.875rem;
+}
