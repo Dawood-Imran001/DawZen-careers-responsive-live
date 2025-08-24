@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+        <style>
+            #container{
+                background-color: forestgreen;
+                border: 1px solid black;
+                font-family: sans-serif;
+                padding: 10px;
+                height: 250px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: stretch;
+            }
+            .item{
+                border: 1px solid black;
+                padding: 10px 24px;
+                background-color: royalblue;
+            }
+            #item-1{
+                flex-grow:1;
+            }
+            #item-2{
+                flex-grow: 4;
+            }
+            #item-3{
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="item" id="item-1">Item 1</div>
+            <div class="item" id="item-2">Item 2</div>
+            <div class="item" id="item-3">Item 3</div>
+            <!-- <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div> -->
+        </div>
+    </body>
+</html>

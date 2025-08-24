@@ -1,117 +1,111 @@
-html{
-    font-size: 20px;
-}
+/*Base Style (Extra small devices- Mobile phones)*/
+/*CSS Rules */
 
-#logo-section{
-    background-color: rgba(74,103,65,0.45);
+html {
+    font-size: 14px;
 }
 
 body {
+    max-width: 100%;
     margin: 0%;
     padding: 0%;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
 
-h1{
+h1 {
+    padding-right: 0;
     font-size: 2.5rem;
     color: green;
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom:5px;
+    text-align:center;
 }
-h2{
+
+h2 {
     font-size: 2rem;
     text-align: center;
 }
-h3{
+
+h3 {
     font-size: 1.75rem;
 }
-h4{
+
+h4 {
     font-size: 1.5rem;
 }
-h5{
+
+h5 {
     font-size: 1.25rem;
 }
-h6{
+
+h6 {
     font-size: 1rem;
 }
 
-#about {
-    display: flex;
-    width: 50%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 8px;
-}
-#description{
-    padding-left: 8px;
-    padding-right: 10px;
-    margin: 0%;
-    width: 100%;
-    text-align: left;
-    font-style: italic;
-    line-height: 1.4;
-    background-color: rgb(211,211,211);
-}
-#forest-img{
-    border-radius: 10px;
-    width: 100%;
-}
-#banner {
-    object-fit: cover;
-    width: 100%;
-    margin-top: 0%;
-    padding-top: 0%;
-}
-
-a{
+a {
     text-decoration: none;
     color: #2E6F40;
 }
 
-a:focus, a:hover{
+a:focus,
+a:hover {
     color: #253D2C;
 }
 
-#logo{
+#logo-with-text {
+    display: none;
+}
+
+#logo {
     margin: 0%;
-
-    padding: 0px 8px 8px 0px;
 }
 
-
-
-#jobs-table{
+#logo-section {
+    background-color: rgba(74, 103, 65, 0.45);
     width: 100%;
-    border: 1px solid darkgray;
-    border-collapse: collapse;
 }
 
-.jobs-header-row th{
-    border: 1px solid darkgray;
-    background-color: #68BA7F;
-    text-align: center;
-    color: #253D2C;
-    padding: 8px;
+#banner {
+    object-fit: cover;
+    width: 100%;
+    height:300px;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 
-.jobs-data-row td{
-    border: 1px solid darkgray;
-    padding: 8px;
-    font-size: 1rem;
+#about {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-#jobs-table tr:nth-child(odd){
-    background-color: #CFFFDC;
+#description{
+    padding:8px;
+    align-self: center;
+    max-width: 100%;
+    text-align: left;
+    font-style: italic;
+    line-height: 1.4;
 }
 
-.jobs-header-row{
-    font-size: 1.25rem;
+#forest-img{
+    align-self: center;
+    border-radius: 10px;
+    max-width: 100%;
+    height:200px;
 }
 
 #job {
@@ -120,8 +114,28 @@ a:focus, a:hover{
     padding: 0 8px;
 }
 
+#jobs-table{
+    display:none;
+}
+
+.job-box{
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.job-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.job-detail{
+    margin-top: 6px;
+}
+
 #application{
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 8px;
 }
@@ -137,6 +151,7 @@ a:focus, a:hover{
 .form-input, #post-applied, #cover-letter{
     font-size: 1.25rem;
     margin-top: 4px;
+    width:90%;
     padding: 4px;
     border: 4px solid gray;
     border-radius: 8px;
@@ -155,32 +170,174 @@ a:focus, a:hover{
     cursor: pointer;
 }
 
-h3{
-    margin-bottom: 0%;
-    margin-top: 0%;
-}
-
-.apply{
-    float: right;
-}
-
 #footer{
     background-color: #B2BEB5;
     padding: 8px;
-    margin: 32px;
     text-align: center;
 }
 
 #footer-links{
     list-style: none;
+    padding:0px;
 }
 #footer-links li{
-    display: inline;
     margin: 0 16px;
+    margin-bottom: 10px;
     
 }
 
 #copyright{
     color: #36454F;
     font-size: 0.875rem;
+}
+
+
+
+
+
+/*Small devices (Tablets)*/
+@media screen and (min-width:576px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1{
+        padding-right: 120px;
+    }
+
+    #banner {
+        object-fit: cover;
+        width: 100%;
+        height:400px;
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #logo-with-text{
+        display:block;
+        margin: 0%;
+    }
+
+    #description{
+        padding:8px;
+        margin: 0%;
+        max-width: 75%;
+        text-align: left;
+        font-style: italic;
+        line-height: 1.4;
+    }
+
+    #forest-img{
+        border-radius: 10px;
+        width: 75%;
+        height:300px;
+        margin-left: 8px;
+    }
+
+
+}
+
+/*Medium Devices (Laptops)*/
+@media screen and (min-width:768px) {
+    html {
+        font-size: 20px;
+    }
+
+    h1{
+        padding-right:0px;
+        margin-bottom: 30px;
+    }
+
+    #banner {
+        object-fit: cover;
+        width: 100%;
+        height:600px;
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    
+    #about{
+        flex-direction: row;
+    }
+
+    #description{
+        padding:8px;
+        margin: 0%;
+        max-width: 50%;
+        text-align: left;
+        font-style: italic;
+        line-height: 1.4;
+    }
+
+    #forest-img{
+        border-radius: 10px;
+        max-width: 200%;
+        height:340px;
+            margin-left:0px;
+    }
+
+    #jobs-list{
+        display:none;
+    }
+
+    #jobs-table{
+        display:table;
+        width: 100%;
+        border: 1px solid darkgray;
+        border-collapse: collapse;
+    }
+
+    .jobs-header-row th{
+        border: 1px solid darkgray;
+        background-color: #68BA7F;
+        text-align: center;
+        color: #253D2C;
+        padding: 8px;
+    }
+
+    .jobs-data-row td{
+        border: 1px solid darkgray;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    #jobs-table tr:nth-child(odd){
+        background-color: #CFFFDC;
+    }
+
+    .jobs-header-row{
+        font-size: 1.25rem;
+    }
+
+    #application{
+        max-width: 800px;
+    }
+
+    .form-input, #post-applied, #cover-letter{
+        width:auto;
+    }
+
+    #footer-links li{
+        display:inline;
+    }
+}
+
+/*Large Devices (desktops)*/
+@media screen and (min-width:992px) {
+
+}
+
+/*Extra Large Devices (large desktops)*/
+@media screen and (min-width:1200px) {
+    #banner {
+        object-fit: cover;
+        width: 100%;
+        height:500px;
+        margin-top: 0%;
+        padding-top: 0%;
+    }
 }
